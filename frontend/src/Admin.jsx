@@ -34,7 +34,7 @@ function Admin({ onLogout }) {
       setError("");
 
       const response = await fetch(
-        "http://localhost:8080/api/contacts"
+        "https://project-plants-1.onrender.com/api/contacts"
       );
 
       if (!response.ok) {
