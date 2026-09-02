@@ -61,7 +61,7 @@ function Admin({ onLogout }) {
       setPlantsLoading(true);
 
       const response = await fetch(
-        "http://localhost:8080/api/plants"
+        "https://project-plants-1.onrender.com/api/plants"
       );
 
       if (!response.ok) {
@@ -137,8 +137,8 @@ function Admin({ onLogout }) {
 
     try {
       const url = editingPlant
-        ? `http://localhost:8080/api/plants/${editingPlant.id}`
-        : "http://localhost:8080/api/plants";
+        ? `https://project-plants-1.onrender.com/api/plants/${editingPlant.id}`
+        : "https://project-plants-1.onrender.com/api/plants";
 
       const method = editingPlant ? "PUT" : "POST";
 
@@ -211,7 +211,7 @@ function Admin({ onLogout }) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/plants/${id}`,
+        `https://project-plants-1.onrender.com/api/plants/${id}`,
         {
           method: "DELETE"
         }

@@ -116,7 +116,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/contacts",
+        "https://project-plants-1.onrender.com/api/contacts",
         {
           method: "POST",
           headers: {
