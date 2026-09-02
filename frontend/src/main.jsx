@@ -21,7 +21,7 @@ function Root() {
 
   const handleLogin = () => {
     setLoggedIn(true);
-    setPath("/admin");
+    setPath("/admins");
   };
 
   const handleLogout = () => {
@@ -30,10 +30,10 @@ function Root() {
     );
 
     setLoggedIn(false);
-    setPath("/admin");
+    setPath("/admins");
   };
 
-  if (path === "/admin") {
+  if (path === "/admins") {
 
     if (!loggedIn) {
       return (

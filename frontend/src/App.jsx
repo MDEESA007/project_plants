@@ -186,7 +186,7 @@ function App() {
           <a href="#contact">Contact</a>
 
           <a
-            href="/admin"
+            href="/admins"
             className="admin-link"
           >
             Admin
